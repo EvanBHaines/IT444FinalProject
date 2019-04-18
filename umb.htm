@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0057)https://sm-prd11-identity.ucollaborate.net/umb/forgotPW#! -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSRF Token -->
+<meta name="csrf-token" content="4KbxYQ6jjf8CR5mBy8k7k9R0DcPIQ1DOYRT8mhuF">
+<title>Forgot Password | University of Massachusetts Boston</title>
+<link rel="apple-touch-icon" href="https://www.umb.edu/apple-touch-icon.png">
+<link rel="shortcut icon" href="https://www.umb.edu/favicon.gif" type="image/gif">
+<link rel="stylesheet" href="./umb_files/kube.css">
+<link rel="stylesheet" href="./umb_files/css">
+<link href="./umb_files/css(1)" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./umb_files/font-awesome.min.css">
+<link rel="stylesheet" href="./umb_files/jquery-ui.css">
+<link rel="stylesheet" href="./umb_files/standard.css">
+<!-- Style overrides -->
+<link href="./umb_files/app.css" rel="stylesheet">
+<link href="./umb_files/kube(1).css" rel="stylesheet">
+<link href="./umb_files/umb.css" rel="stylesheet">
+<script type="text/javascript" async="" src="./umb_files/siteanalyze_21258.js"></script><script src="./umb_files/jquery.min.js"></script>
+<script src="./umb_files/jquery-ui.js"></script>
+<script src="./umb_files/kube.min.js"></script>
+<script type="text/javascript">
+	// SiteImprove
+	/*_$tag____*/
+	(function() {
+		var sz = document.createElement('script');
+		sz.type = 'text/javascript';
+		sz.async = true;
+		sz.src = '//us1.siteimprove.com/js/siteanalyze_21258.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(sz, s);
+	})();
+	/*_$t*/
+</script>
+
+<script>
+function validate()
+{
+  	var regex = /^[a-zA-Z0-9.]{2,50}$/;
+  	var x = document.getElementById("loginID");
+  
+	if (regex.test(x.value))
+	  {
+	  	ShowSampleModalDialogEsc(); // Spinning circle
+		return true;
+	  }
+	else
+	  {
+	  	alert("Invalid Campus User ID length or format, please correct and retry");
+		return false;
+	  }
+}
+</script>
+
+<style>
+/* .container.content {width:1200px; border:1px solid #f00;}*/
+</style>
+</head>
+<body>
+	
+
+	
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSRF Token -->
+<meta name="csrf-token" content="4KbxYQ6jjf8CR5mBy8k7k9R0DcPIQ1DOYRT8mhuF">
+<title>Password Management | University of Massachusetts Boston</title>
+<link rel="apple-touch-icon" href="https://www.umb.edu/apple-touch-icon.png">
+<link rel="shortcut icon" href="https://www.umb.edu/favicon.gif" type="image/gif">
+<link rel="stylesheet" href="./umb_files/kube.css">
+<link rel="stylesheet" href="./umb_files/css">
+<link href="./umb_files/css(1)" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./umb_files/font-awesome.min.css">
+<link rel="stylesheet" href="./umb_files/jquery-ui.css">
+<link rel="stylesheet" href="./umb_files/standard.css">
+<!-- Style overrides -->
+<link href="./umb_files/app.css" rel="stylesheet">
+<script src="./umb_files/jquery.min.js"></script>
+<script src="./umb_files/jquery-ui.js"></script>
+<script src="./umb_files/kube.min.js"></script>
+<script type="text/javascript" src="./umb_files/umb.js"></script>
+<link href="./umb_files/jquery-ui(1).css" rel="Stylesheet" type="text/css">
+
+<script type="text/javascript" src="./umb_files/jquery-ui(2).js"></script>
+
+<style>
+.ui-dialog-titlebar-close {
+	visibility: hidden;
+}
+</style>
+
+
+
+
+	<div class="global-nav blue">
+		<header class="global-nav-inner units-row units-split end">
+		<div class="unit-40">
+			<a href="https://www.umb.edu/"> <img src="./umb_files/umb-white.png" alt="University of Massachusetts Boston" class="full-screen">
+				<img src="./umb_files/umb-white-mobile.png" alt="University of Massachusetts Boston" class="mobile"> <span class="sr-only">Return to Home Page</span>
+			</a>
+		</div>
+		<div class="unit-60">
+			<nav class="navbar navbar-collapse navbar-right" role="navigation">
+			<ul>
+			
+			
+			
+			
+			
+			</ul>
+			</nav>
+		</div>
+		</header>
+	</div>
+	<div id="divDialogNoEsc" style="display: none;"><img src="./umb_files/Loading_icon.gif" alt="loading sign"></div>
+
+
+
+	
+	
+	<div class="masthead">
+		<div class="heading-wrapper">
+			<div class="container units-row end">
+				<div class="unit-100 masthead-inner">
+					<h1 id="pageTtle">Forgot Password</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="masthead">
+		<p class="homeMessages"><b>Please enter your campus User ID (the part before @umb.edu in your email address).</b></p>
+	</div>
+	<main class="container content unit-centered">
+	<div class="units-row">
+		<div class="unit-100 unit-centered">
+
+			<form id="forgotPWForm" class="login-form" action="https://sm-prd11-identity.ucollaborate.net/umb/forgotPWProceed" method="post">
+				<div id="errors">
+					<label id="uidLabel" class="control-label">Campus User Id<span class="req"> *</span></label>
+					<input id="loginID" name="loginID" aria-labelledby="uidLabel" class="form-control" required="true" type="text" value="">
+
+				</div>
+				<div class="masthead">
+					<p style="text-align: center; color:red;"></p>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn" id="login-button" onclick="return validate()">Submit</button>
+				</div>
+				<div class="masthead">
+					<a href="https://sm-prd11-identity.ucollaborate.net/umb/landing"><p class="landingPage">Password
+							Management Homepage</p></a>
+
+				</div>
+
+
+			</form>
+		</div>
+		<footer class="unit-100">
+		<hr>
+		<div>© 2018 University of Massachusetts Boston</div>
+		</footer>
+	</div>
+	</main>
+
+
+<script type="text/javascript" async="" src="./umb_files/1e6ab715a3a95d4603.js"></script></body></html>
